@@ -20,7 +20,7 @@ router.get("/", function (req, res, next) {
 });
 // GET new message form
 router.get("/new", function (req, res, next) {
-  res.render("form", { title: "Mini Messageboard", messages: messages });
+  res.render("form", { title: "New Message", messages: messages });
 });
 router.post("/new", (req, res) => {
   const body = req.body;
